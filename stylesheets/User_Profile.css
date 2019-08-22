@@ -1,0 +1,65 @@
+.imgProfile{
+    width:90px;
+    height:90px;
+    background-color:rgb(220,220,220);
+    border-radius: 50%;
+    position: absolute;
+    top:-60px;
+    left:10px;
+    }
+
+main{
+    background-color:rgb(200,200,200);
+    margin-top:120px;
+    min-height:100vh;
+}
+
+.container__frame{
+    border:1px solid black;
+    border-radius:12px;
+    width:95%;
+    margin:auto;
+    min-width:400px;
+    max-width:1400px;
+    padding:30px 20px 20px 20px;
+    background-color:rgb(220, 220, 220)
+}
+
+.container__frame::after{
+    content:'Edit';
+    color:rgb(20, 20, 180);
+    cursor: pointer;
+    position:absolute;
+    right:60px;
+    top:12px;
+}
+
+.userDetail{
+    margin-top:15px;
+}
+
+.user__Details{
+    display:flex;
+    flex-flow:row wrap;
+    justify-content: space-around;
+    align-items:flex-end;
+    align-content:space-around;
+}
+
+.userDetail>p{
+    margin-bottom:0;
+    text-align:center;
+    color:rgb(100, 107, 100);
+}
+
+#Employee__Name{
+    position:absolute;
+    top:-40px;
+    left:110px;
+}
+
+#link__Manager{
+text-align: start;
+color:blue;
+text-decoration-line: underline;
+}
