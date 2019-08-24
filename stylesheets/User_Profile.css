@@ -4,8 +4,8 @@
     background-color:rgb(220,220,220);
     border-radius: 50%;
     position: absolute;
-    top:-60px;
-    left:10px;
+    top:-40px;
+    left:15px;
     }
 
 main{
@@ -18,20 +18,12 @@ main{
     border:1px solid black;
     border-radius:12px;
     width:95%;
-    margin:auto;
-    min-width:400px;
+    margin:13px auto;
+    height:auto;
+    min-width:320px;
     max-width:1400px;
     padding:30px 20px 20px 20px;
     background-color:rgb(220, 220, 220)
-}
-
-.container__frame::after{
-    content:'Edit';
-    color:rgb(20, 20, 180);
-    cursor: pointer;
-    position:absolute;
-    right:60px;
-    top:12px;
 }
 
 .userDetail{
@@ -54,7 +46,8 @@ main{
 
 #Employee__Name{
     position:absolute;
-    top:-40px;
+    font-size: 2rem;
+    top:-24px;
     left:110px;
 }
 
@@ -62,4 +55,79 @@ main{
 text-align: start;
 color:blue;
 text-decoration-line: underline;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+  
+#Employee__Name{
+    left:115px;
+    top:-10px;
+    font-size: 18px;
+}  
+
+}
+
+
+
+
+
+/* ROLES SECTION */
+
+
+.section__roles{
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+}
+
+
+.frame__roles{
+    background-color:white;
+    border-radius:3px;
+    height:120px;
+    overflow:auto;
+}
+
+.arrows__modifyRole{
+    display:flex;
+    flex-direction: column;
+}
+
+.arrow_addRole, .arrow_removeRole{
+margin:10px 0;
+cursor: pointer;
+}
+
+
+.frame__roles>li{
+    list-style: none;
+    text-align: center;
+    margin:3px;
+}
+
+.container__content__description{
+    font-size:20px;
+    text-align: center;
+    border-bottom:1px solid rgb(180,180,180);
+    margin-bottom:15px;
+}
+
+.footer__userProfile{
+    background-color:rgb(200, 207, 200);
+    border-top :1px solid rgb(100, 107, 100);
+    border-bottom:1px solid rgb(100, 107, 100);
+    padding:3px 15px;
+    display:flex;
+    justify-content: flex-end;
+}
+
+.footer__userProfile>button {
+    margin:5px;
+}
+
+#btn__options{
+    margin-right:auto;
 }
