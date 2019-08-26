@@ -32,30 +32,48 @@
 
                 <ul class="nav flex-column bg-white mb-0">
                     <li class="nav-item">
-                        <a href="#" class="nav-link text-dark font-italic bg-light">
+                        <a href="/admin_userlist.html" class="nav-link text-dark font-italic bg-light">
                             <i class="fa fa-th-large mr-3 text-primary fa-fw"></i>
                             Home
                         </a>
                     </li>
-
+                    
                     <li class="nav-item">
-                        <a href="#" class="nav-link text-dark font-italic bg-light">
+                        <a href="/rolesPage.html" class="nav-link text-dark font-italic bg-light">
                             <i class="fa fa-address-card mr-3 text-primary fa-fw"></i>
                             Roles
                         </a>
                     </li>
-
+                    
                     <li class="nav-item">
                         <a href="#" class="nav-link text-dark font-italic bg-light">
                             <i class="fa fa-cubes mr-3 text-primary fa-fw"></i>
                             Audit
                         </a>
                     </li>
-
+                    
                     <li class="nav-item">
                         <a href="#" class="nav-link text-dark font-italic bg-light">
                             <i class="fa fa-picture-o mr-3 text-primary fa-fw"></i>
                             About
+                        </a>
+                    </li>
+                </ul>
+                
+                <p class="text-gray font-weight-bold text-uppercase px-3 small py-4 mb-0">Charts</p>
+                
+                <ul class="nav flex-column bg-white mb-0">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark font-italic bg-light">
+                            <i class="fa fa-area-chart mr-3 text-primary fa-fw"></i>
+                            Activity Chart
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a href="#" class="nav-link text-dark font-italic bg-light">
+                            <i class="fa fa-bar-chart mr-3 text-primary fa-fw"></i>
+                            Bar charts
                         </a>
                     </li>
                 </ul>
@@ -93,41 +111,41 @@
                         <div class="user__Details">
                             <div class="userDetail col-lg-3 col-sm-6">
                                 <p>First Name</p>
-                                <input type="text" class="form-control" placeholder="First Name" aria-label="Username"
+                                <input type="text" class="form-control input_firstName" placeholder="First Name" aria-label="Username"
                                     aria-describedby="addon-wrapping">
                             </div>
                             <div class="userDetail col-lg-3 col-sm-6">
                                 <p>Last Name</p>
-                                <input type="text" class="form-control" placeholder="Last Name" aria-label="Username"
+                                <input type="text" class="form-control input_lastName" placeholder="Last Name" aria-label="Username"
                                     aria-describedby="addon-wrapping">
                             </div>
                             <div class="userDetail col-lg-3 col-sm-6">
                                 <p>Work Site</p>
-                                <input type="text" class="form-control" placeholder="Work Site" aria-label="Username"
+                                <input type="text" class="form-control input_workSite" placeholder="Work Site" aria-label="Username"
                                     aria-describedby="addon-wrapping">
                             </div>
                             <div class="userDetail col-lg-3 col-sm-6">
                                 <p>Manager</p>
-                                <input type="button" id="link__Manager" class="form-control" value="Manager" >
+                                <input type="button" id="link__Manager" class="form-control input_manager" value="Manager" >
                             </div>
                             <div class="userDetail col-lg-3 col-sm-6">
                                 <p>Phone</p>
-                                <input type="text" class="form-control" placeholder="Phone" aria-label="Username"
+                                <input type="text" class="form-control input_phone" placeholder="Phone" aria-label="Username"
                                     aria-describedby="addon-wrapping">
                             </div>
                             <div class="userDetail col-lg-3 col-sm-6">
                                 <p>email</p>
-                                <input type="email" class="form-control" placeholder="email" aria-label="Username"
+                                <input type="email" class="form-control input_email" placeholder="email" aria-label="Username"
                                     aria-describedby="addon-wrapping">
                             </div>
                             <div class="userDetail col-lg-3 col-sm-6">
                                 <p>Department</p>
-                                <input type="text" class="form-control" placeholder="Department" aria-label="Username"
+                                <input type="text" class="form-control input_department" placeholder="Department" aria-label="Username"
                                     aria-describedby="addon-wrapping">
                             </div>
                             <div class="userDetail col-lg-3 col-sm-6">
                                 <p>Last Login</p>
-                                <p type="date" class="form-control">21/07/2019</p>
+                                <p type="date" class="form-control input_lastLogin">21/07/2019</p>
                             </div>
                         </div>
                     </div>
@@ -137,24 +155,15 @@
             <div class="container__frame">
                 <p class="container__content__description">Roles</p>
                 <div class="row section__roles">
-                    <div class="col-5 frame__roles">
-                        <li>Role1</li>
-                        <li>Role2</li>
-                        <li>Role3</li>
-                        <li>Role4</li>
-                        <li>Role5</li>
-                        <li>Role6</li>
-                        <li>Role7</li>
+                    <div class="col-5 frame__roles allRoles">
+                        
                     </div>
                     <div class="arrows__modifyRole">
                             <i class="fas fa-arrow-right arrow_addRole"></i>
                             <i class="fas fa-arrow-left arrow_removeRole"></i>
                     </div>
-                    <div class="col-5 frame__roles">
-                        <li>Role3</li>                        
-                        <li>Role3</li>   
-                        <li>Role3</li>                        
-                        <li>Role37</li>                       
+                    <div class="col-5 frame__roles userRoles">
+                     
                     </div>
                 </div>
             </div>
@@ -193,6 +202,8 @@
         <!-- keep this empty for now. -->
     </footer>
 
+    <script src="/data.js"></script>
+    <script src="/scripts/user_profile.js"></script>
     <script src="./scripts/Dashboard_admin.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

@@ -8,11 +8,12 @@ main {
 }
 .table-style {
     clear: both;
-    margin: 28%;
+    margin: 28% 10% 5% 30%;
     width: 50%;
     border: 2px solid darkgray;
     padding: 5px;
     text-align: center; 
+    cursor:pointer;
 }
 
 thead th{
