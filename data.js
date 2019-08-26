@@ -1,6 +1,6 @@
 
 const loggedInUser={
-	userId:,
+	userId: 0,
 	name:""
 };
 
@@ -9,60 +9,60 @@ const USER={
 	firstName:"",
 	lastName:"",
 	managerName:"",
-	managerId:,
+	managerId: 0,
 	workSite:"",
 	lastLogin:"",
-	department:,
+	department:"",
 	email:"",
 	phone:"",
 	roles:[
-			{roleID:   , 
+			{roleID: "", 
 			roleName:""}
 			],
 };
 
 const USERS=[
 {
-	employeeNumber:,
-	firstName:"",
-	lastName:"",
-	roles:"",
-	department:"",
-	workSite:""
+	employeeNumber: 1,
+	firstName:"Emad",
+	lastName:"Silawi",
+	roles:"Employee",
+	department:"R&D",
+	workSite:"Nazareth"
 },{
-	employeeNumber:,
-	firstName:"",
-	lastName:"",
-	roles:"",
-	department:"",
-	workSite:""
+	employeeNumber: 2,
+	firstName:"Fadi",
+	lastName:"Mohammad",
+	roles:"Team Leader",
+	department:"R&D",
+	workSite:"Nazareth"
 },{
-	employeeNumber:,
-	firstName:"",
-	lastName:"",
-	roles:"",
-	department:"",
-	workSite:""
+	employeeNumber: 3,
+	firstName:"Chris",
+	lastName:"Issa",
+	roles:"Employee",
+	department:"QA Automation",
+	workSite:"Ra'anana"
 },{
-	employeeNumber:,
-	firstName:"",
-	lastName:"",
-	roles:"",
-	department:"",
-	workSite:""
+	employeeNumber: 4,
+	firstName:"Samer",
+	lastName:"Saida",
+	roles:"Employee",
+	department:"DB Analysis",
+	workSite:"Nazareth"
 },{
-	employeeNumber:,
-	firstName:"",
-	lastName:"",
-	roles:"",
-	department:"",
-	workSite:""
+	employeeNumber: 5,
+	firstName:"Shahar",
+	lastName:"Grauman",
+	roles:"Manager",
+	department:"R&D",
+	workSite:"Nazareth"
 },{
-	employeeNumber:,
-	firstName:"",
-	lastName:"",
-	roles:"",
-	department:"",
-	workSite:""
+	employeeNumber: 6,
+	firstName:"Ezer",
+	lastName:"Biton",
+	roles:"CEO",
+	department:"Finance",
+	workSite:"Ra'anana"
 },
 ]
