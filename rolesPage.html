@@ -7,7 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="./stylesheets/roles.css">
-    <link rel="stylesheet" href="./stylesheets/User_Profile.css">
     <link rel="stylesheet" href="./stylesheets/Dashboard_admin.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -32,28 +31,35 @@
                 <p class="text-gray font-weight-bold text-uppercase px-3 small pb-4 mb-0">Home</p>
                 
                 <ul class="nav flex-column bg-white mb-0">
-                    <li class="nav-item">
-                        <a href="/admin_userlist.html" class="nav-link text-dark font-italic bg-light">
+                    <li class="nav-item active">
+                        <a href="./Dashboard_admin.html" class="nav-link text-dark font-italic bg-light">
                             <i class="fa fa-th-large mr-3 text-primary fa-fw"></i>
                             Home
                         </a>
                     </li>
+
+                    <li class="nav-item active">
+                        <a href="./admin_userlist.html" class="nav-link text-dark font-italic bg-light">
+                            <i class="fa fa-address-card mr-3 text-primary fa-fw"></i>
+                            Users
+                        </a>
+                    </li>
                     
-                    <li class="nav-item">
-                        <a href="/rolesPage.html" class="nav-link text-dark font-italic bg-light">
+                    <li class="nav-item active">
+                        <a href="./rolesPage.html" class="nav-link text-dark font-italic bg-light">
                             <i class="fa fa-address-card mr-3 text-primary fa-fw"></i>
                             Roles
                         </a>
                     </li>
                     
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a href="#" class="nav-link text-dark font-italic bg-light">
                             <i class="fa fa-cubes mr-3 text-primary fa-fw"></i>
                             Audit
                         </a>
                     </li>
                     
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a href="#" class="nav-link text-dark font-italic bg-light">
                             <i class="fa fa-picture-o mr-3 text-primary fa-fw"></i>
                             About
@@ -64,14 +70,14 @@
                 <p class="text-gray font-weight-bold text-uppercase px-3 small py-4 mb-0">Charts</p>
                 
                 <ul class="nav flex-column bg-white mb-0">
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a href="#" class="nav-link text-dark font-italic bg-light">
                             <i class="fa fa-area-chart mr-3 text-primary fa-fw"></i>
                             Activity Chart
                         </a>
                     </li>
                     
-                    <li class="nav-item">
+                    <li class="nav-item active">
                         <a href="#" class="nav-link text-dark font-italic bg-light">
                             <i class="fa fa-bar-chart mr-3 text-primary fa-fw"></i>
                             Bar charts
@@ -85,7 +91,7 @@
 
     <div id="container">
         <div id="header">
-            <h2>Role Page Admin</h2>
+            <h2>Roles</h2>
         </div>
         <div id="content">
                 <div id="nav">
@@ -99,77 +105,21 @@
                     </form>
                 </div>
                 <br>    
-                <div id="table">
-                        <table class="table">
-                                <thead class="thead-dark">
-                                  <tr>
-                                    <th scope="col">Id</th>
-                                    <th scope="col">Roles</th>
-                                    
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr>
-                                    <th scope="row">1</th>
-                                    <td>Admin</td>
-                                    
-                                  </tr>
-                                  <tr>
-                                    <th scope="row">2</th>
-                                    <td>Manager</td>
-                                    
-                                  </tr>
-                                  <tr>
-                                    <th scope="row">3</th>
-                                    <td>Manager</td>
-                                    
-                                  </tr>
-                                </tbody>
-                              </table>
-                              
-                              <table class="table">
-                                <thead class="thead-light">
-                                  <tr>
-                                    <th scope="col">4</th>
-                                    <th scope="col">Team leader</th>
-                                    
-                                  </tr>
-                                </thead>
-                                <tbody>
-                                  <tr>
-                                    <th scope="row">5</th>
-                                    <td>Team leader</td>
-                                    
-                                  </tr>
-                                  <tr>
-                                    <th scope="row">6</th>
-                                    <td>Employee</td>
-                                    
-                                  </tr>
-                                  <tr>
-                                    <th scope="row">7</th>
-                                    <td>Employee</td>
-                                    
-                                  </tr>
-                                  <tr>
-                                        <th scope="row">8</th>
-                                        <td>Employee</td>
-                                        
-                                      </tr>
-                                      <tr>
-                                            <th scope="row">9</th>
-                                            <td>Employee</td>
-                                            
-                                          </tr>
-                                          <tr>
-                                                <th scope="row">10</th>
-                                                <td>Employee</td>
-                                                
-                                              </tr>
-                                </tbody>
-                              </table>  
-                </div>
+                <div class="table table-hover table-style">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Id</th>
+                                    <th>Roles</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tbody" >
+                
+                            </tbody>
+                        </table>
+                    </div>
                 <br>
+                
                 <div id="delete">
                     <form action="">
                         <label for=""></label>
@@ -178,10 +128,9 @@
                 </div>
             </div>
         </div>
-        <div id="footer">
-<br>        </div>
     </div>
-
+    
+      
 
     <section>
 
@@ -194,17 +143,13 @@
       <footer>
           <!-- keep this empty for now. -->
       </footer>
+      
+      <script src="data.js"></script>
+      <script src="./scripts/rolesPage.js"></script>
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   
-      <script src="./scripts/Dashboard_admin.js"></script>
-      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-          integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-          crossorigin="anonymous"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-          integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-          crossorigin="anonymous"></script>
-      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-          integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-          crossorigin="anonymous"></script>
   
 </body>
 </html>
