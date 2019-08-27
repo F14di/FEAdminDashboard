@@ -2,6 +2,7 @@
 /*$('.mdb-select').materialSelect({
 });
 */
+
 const tbody = document.querySelector('#tbody');
 
 for(const user in USERS){
