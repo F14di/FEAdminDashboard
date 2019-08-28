@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" href="navStyle.css">
+    <link rel="stylesheet" href="./stylesheets/homePage.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
 </head>
@@ -43,23 +43,38 @@
             </ul>
             
         </div>
+        <!-- MAIN CONTENT -->
         <div id="main" class="mainContent">
-                <div>HEADER</div>
+            <header>
+                <div class="jumbotron jumbotron-fluid" id="jumbotron">
+                    <div class="container">
+                        <div id="admin-logo">
+                            <img id="admin-logo-img" src="./assets/images/amdocs-logo.png">
+                        </div>
+                        <div class="admin-icon">
+                            <p class="display-5" id="admin-name">Fluid jumbotron</p>
+                            <a title="Admin Account" role="button" tabindex="0" aria-expanded="false" href="#">
+                                <div id="admin-icon-spn" aria-hidden="true">
+                                    <img id="admin-icon-img" src="./assets/images/baseline_account_circle_white_18dp.png">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </header>
             <svg id="toggleNavbar" onclick="toggleNav()" width="40" height="40" viewBox="0 0 40 40" fill="none" class="">
                 <rect class="navbar__path " y="16" width="40" height="2" fill="black"></rect>
                 <rect class="navbar__path " y="8" width="40" height="2" fill="black"></rect>
                 <rect class="navbar__path " width="40" height="2" fill="black"></rect>
             </svg>
             
-
-
-<h1>CONTENT GOES HERE</h1>
+            
 
 
 
         </div>
     </div>
 
-<script src="/scriptsNav.js"></script>
+<script src="./scripts/homePage.js"></script>
 </body>
 </html>
