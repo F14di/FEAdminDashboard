@@ -7,7 +7,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="./stylesheets/homePage.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="data.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -52,7 +54,7 @@
                             <img id="admin-logo-img" src="./assets/images/amdocs-logo.png">
                         </div>
                         <div class="admin-icon">
-                            <p class="display-5" id="admin-name">Fluid jumbotron</p>
+                            <p class="display-5" id="admin-name">Admin Admin</p>
                             <a title="Admin Account" role="button" tabindex="0" aria-expanded="false" href="#">
                                 <div id="admin-icon-spn" aria-hidden="true">
                                     <img id="admin-icon-img" src="./assets/images/baseline_account_circle_white_18dp.png">
@@ -68,13 +70,80 @@
                 <rect class="navbar__path " width="40" height="2" fill="black"></rect>
             </svg>
             
+            <div class="search-users">
+                <form class="form-inline my-2 my-lg-0">
+                    <div id="search-users-bar">
+                        <input class="form-control mr-sm-2" id="search-bar" type="search" placeholder="Search a user" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </div>
+
+                    <div id="search-users-select">
+                        <select name="users-attributes" id="">
+                            <option value="">Role</option>
+                        </select>
+
+                        <select name="" id="">
+                            <option value="">Department</option>
+                        </select>
+
+                        <select name="" id="">
+                            <option value="">Work Site</option>
+                        </select>
+
+                        <select name="" id="">
+                            <option value="">Country</option>
+                        </select>
+                    </div>
+                </form>
+
+            </div>
             
+            <div class="table table-hover table-style row">
+                <table id="table-content">
+                    <thead>
+                        <th>ID</th>
+                        <th>Full Name</th>
+                        <th>Roles</th>
+                        <th>Department</th>
+                        <th>Work Site</th>
+                    </thead>
+                    <tbody id="tbody">
+        
+                    </tbody>
+                </table>   
+            </div>
 
+            <div style="text-align:end;">
+                <div class="charts">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle button_Dropdown" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item dropDown__workSite" style="cursor:pointer;">Work site</a>
+                            <a class="dropdown-item dropDown__department" style="cursor:pointer;">Department</a>
+                            <a class="dropdown-item dropDown__role" style="cursor:pointer;">Role</a>
+                        </div>
+                    </div>
+                    
 
+                <div class="pieChart"></div>
+                    
+                </div>
+            </div>
 
         </div>
     </div>
 
-<script src="./scripts/homePage.js"></script>
+
+
+    <script src="./data.js"></script>
+    <script src="./scripts/homePage.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script src="./scripts/pieChartScript.js"></script>
+    <script src="./scripts/pieChartScriptD3.js"></script>
 </body>
 </html>

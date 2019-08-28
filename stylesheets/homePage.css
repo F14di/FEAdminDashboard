@@ -146,6 +146,34 @@
     height: 45px;
     margin-top: 2px;
     position: absolute;
-    left: auto;
+    left: 10px;
+}
+
+.search-users{
+    display: flex;
+    float: right;
+}
+
+#search-bar{
+    width: 300px;
+}
+#search-users-select{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.table-style {
+    /* clear: both; */
+    text-align: center; 
+    position: relative;
+    margin-left: 100px;
+    border-color: black;
+    padding: 5px;
     
+}
+
+#table-content{
+    margin-left: 30%;
+    margin-top: 50px;
+    cursor:pointer;
 }
