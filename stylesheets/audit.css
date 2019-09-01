@@ -1,0 +1,24 @@
+#audit-table {
+    
+    text-align: center; 
+    position: relative;
+    border-color: black;
+    padding: 5px;
+    
+}
+#table-content{
+    margin-left: 30%;
+    margin-top: 50px;
+   cursor: inherit;
+}
+.table1{ 
+    table-layout: fixed; width: 1000px;
+    margin: auto;
+    margin-top: 200px;
+}
+#page-nav{
+    margin-right:300px ;
+}
+#drop-down1{
+    position: center;
+}
