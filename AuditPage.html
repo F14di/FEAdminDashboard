@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <link rel="stylesheet" href="./stylesheets/audit.css">
     <link rel="stylesheet" href="./stylesheets/homePage.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://d3js.org/d3.v4.min.js"></script>
     <script src="data.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <title>User Audit</title>
 </head>
-<body>
 
+<body>
+    
     
     <div>
-
         <div id="sideNavBar" class="sidebar">
             <ul class="nav__ul">
                 <li><a href="">
@@ -45,6 +47,7 @@
             </ul>
             
         </div>
+    </div>
         <!-- MAIN CONTENT -->
         <div id="main" class="mainContent">
             <header>
@@ -65,78 +68,58 @@
                 </div>
             </header>
             
-            <svg id="toggleNavbar" onclick="toggleNav()" width="40" height="40" viewBox="0 0 40 40" fill="none" class="">
-                <rect class="navbar__path " y="16" width="40" height="2" fill="black"></rect>
-                <rect class="navbar__path " y="8" width="40" height="2" fill="black"></rect>
-                <rect class="navbar__path " width="40" height="2" fill="black"></rect>
-            </svg>
-            
-            <div class="search-users">
-                <form class="form-inline my-2 my-lg-0">
-                    <div id="search-users-bar">
-                        <input class="form-control mr-sm-2" id="search-bar" type="search" placeholder="Search a user" aria-label="Search">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                    </div>
+     <svg id="toggleNavbar" onclick="toggleNav()" width="40" height="40" viewBox="0 0 40 40" fill="none" class="">
+        <rect class="navbar__path " y="16" width="40" height="2" fill="black"></rect>
+        <rect class="navbar__path " y="8" width="40" height="2" fill="black"></rect>
+        <rect class="navbar__path " width="40" height="2" fill="black"></rect>
+    </svg>
 
-                    <div id="search-users-select">
-                        <select name="users-attributes" id="">
-                            <option value="">Role</option>
-                        </select>
-
-                        <select name="" id="">
-                            <option value="">Department</option>
-                        </select>
-
-                        <select name="" id="">
-                            <option value="">Work Site</option>
-                        </select>
-
-                        <select name="" id="">
-                            <option value="">Country</option>
-                        </select>
-                    </div>
-                </form>
-
-            </div>
-            
-            <div class="table table-hover table-style row">
-                <table id="table-content">
-                    <thead>
-                        <th>ID</th>
-                        <th>Full Name</th>
-                        <th>Roles</th>
-                        <th>Department</th>
-                        <th>Work Site</th>
-                    </thead>
-                    <tbody id="tbody">
-        
-                    </tbody>
-                </table>   
-            </div>
-
-            <div style="text-align:end;">
-                <div class="charts">
-                    <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle button_Dropdown" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            
-                        </button>
+    <div class="table1">
+        <table class="table" id="audit-table">
+            <thead>
+                    <!-- <div class="dropdown1">
+                         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Dropdown button
+                            </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                            <a class="dropdown-item dropDown__workSite" style="cursor:pointer;">Work site</a>
-                            <a class="dropdown-item dropDown__department" style="cursor:pointer;">Department</a>
-                            <a class="dropdown-item dropDown__role" style="cursor:pointer;">Role</a>
-                        </div>
-                    </div>
-                    
+                              <a class="dropdown-item" href="#">Action</a>
+                              <a class="dropdown-item" href="#">Another action</a>
+                              <a class="dropdown-item" href="#">Something else here</a>
+                            </div>
+                     </div> -->
 
-                <div class="pieChart"></div>
-                    
-                </div>
-            </div>
-
-        </div>
+                          <br>
+                <tr id="table-content">
+                    <th>Action Date</th>
+                    <th>Time</th>
+                    <th>User</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
     </div>
+    <br>
 
 
+    <nav aria-label="Page navigation example" id="page-nav">
+        <ul class="pagination justify-content-end">
+          <li class="page-item disabled">
+            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">4</a></li>
+          <li class="page-item"><a class="page-link" href="#">5</a></li>
+          <li class="page-item"><a class="page-link" href="#">6</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#">Next</a>
+          </li>
+        </ul>
+      </nav>
 
     <script src="./data.js"></script>
     <script src="./scripts/homePage.js"></script>
@@ -146,5 +129,8 @@
 
     <script src="./scripts/pieChartScript.js"></script>
     <script src="./scripts/pieChartScriptD3.js"></script>
+
+        <script src="scripts/api.js"></script>
+        <script src="scripts/audit.js"></script>
 </body>
 </html>
