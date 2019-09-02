@@ -151,13 +151,15 @@
 
 .search-users{
     display: flex;
-    float: right;
+    align-content: center;
+    justify-content:center;
 }
 
 #search-bar{
     width: 300px;
 }
 #search-users-select{
+    display:flex;
     margin-left: 10px;
     margin-right: 10px;
 }
