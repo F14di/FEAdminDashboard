@@ -1,64 +1,55 @@
-.sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 70px;
-    background-color: rgb(200,200,200);
-    overflow-x: hidden; 
-    padding-top: 60px; 
-    z-index: 100;
-  }
-  
-/* #main {
-    padding: 40px 20px 20px 20px;
-  } */
-.mainContent{
-    margin-left:60px;
+.header{
+    height:60px;
+    display:flex;
+    padding-top:7px;
+    justify-content: space-between;
+    background-color: rgb(220,220,220);
+    align-content: center;
 }
 
-   .widthToggle{
-      width:250px;
-  }
+.img__logo{
+    max-height:70%;
+    margin:7px 0 7px 40px;
+    max-width:auto;
+}
 
-  .marginToggle{
-      margin-left:250px;
-  }
-  .hideContent{
-      display:none;
-  }
 
-    #toggleNavbar{
-    padding:3px;
-    background-color:rgb(200,200,200);
-    position: absolute;
-    left:14px;
-    top:20px;
-    border-radius:3px;
-    cursor:pointer;
-    z-index:150;
-    }
-/* 
-    .hamburgerPath{
-        transition: transform 0.3s linear;
-    } */
+.navBar{
+    width:0;
+    float:left;
+    overflow: hidden;
+    height:auto;
+    background-color: rgb(220,220,220);
+}
 
-    .hamburgerPath:nth-of-type(1) {
-        transform: rotate(45deg) translate(6px,-21px);
-    }
 
-    .hamburgerPath:nth-of-type(2) {
-        transform: rotate(45deg) translate(6px,-13px);
-    }
+.toggleNav{
+    width:200px;
+}
 
-    .hamburgerPath:nth-of-type(3) {
-        transform: rotate(-45deg) translate(-16px, 25px);
-    }
+.toggleMain{
+    width: calc(100% - 200px);
+    float:right;
+    
+}
 
-/* Navbar */
+
+.user_logOut{
+    display:flex;
+    align-items: center;
+    margin-right:12px;
+    justify-content: center;
+}
+
+.user_logOut p{
+    font-size: 18px;
+    margin:0 12px;
+}
+
+
 
 .nav__ul{
-    height:80vh;
+    height:60;
     margin-top:45px;
     padding-left:0;
     margin-bottom:20px;
@@ -76,7 +67,6 @@
 }
 
 .nav__ul li>a{
-    position: relative;
     display: flex;
     align-items: baseline;
     text-decoration: none;
@@ -85,67 +75,52 @@
 }
 
 .nav__ul i{
-    font-size:32px;
-    float:left;
-    margin:25px;
-    margin-bottom:12px;
-    line-height:30px;
-    width:30px;
+    font-size:22px;
 }
 
 .nav__ul p{
+    margin-left:10px;
     text-align: center;
-    font-size:26px;
-    margin-top:30px;
+    font-size:22px;
+    margin-top:10px;
     color:black;
-    line-height:30px;
-    font:'roboto';
-    font-weight: 400;
+    font:sans-serif;
+    letter-spacing:2px;
 }
 
-#jumbotron {
-    height: 50px;
+
+.nav__ul p:hover{
+    color: rgb(240, 110, 35);
+}
+
+
+ .toggleNavbar{
+    padding-top:5px;
+    background-color:rgb(160,160,160);
     position: relative;
-    padding: 0;
-    background-color: rgb(200,200,200);
-}
-.admin-icon{
-    float: right;
-}
-#admin-icon-img{
-    background-color: black;
-    border-radius: 50%;
-    margin-top: 6px;
-    
-}
-#admin-icon-spn{
-    margin:auto;
-    position: absolute;
-    right: 20px;
-    cursor: pointer;
-    
-}
-/* #admin-icon-spn::before {
-    content : "Admin";
-    color: black;
-    display: inline;
-    position: relative;
-    top:4px;
-    right: 4px;
-} */
+    border-radius:3px;
+    cursor:pointer;
+    z-index:150;
+    }
 
-#admin-name{
-    margin-top: 10px;
-    position: absolute;
-    right: 65px;
-    float: right;
-}
 
-#admin-logo-img{
-    width: auto;
-    height: 45px;
-    margin-top: 2px;
-    position: absolute;
-    left: auto;
+    .hamburgerPath:nth-of-type(1) {
+        transform: rotate(45deg) translate(6px,-21px);
+    }
+
+    .hamburgerPath:nth-of-type(2) {
+        transform: rotate(45deg) translate(6px,-13px);
+    }
+
+    .hamburgerPath:nth-of-type(3) {
+        transform: rotate(-45deg) translate(-16px, 25px);
+    }
+
+    .navIcon{
+        width:40px;
+        text-align: center;
+        font-size:80px;
+    }
+
+
     
-}
