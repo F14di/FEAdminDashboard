@@ -18,16 +18,16 @@
 
         <div id="sideNavBar" class="sidebar">
             <ul class="nav__ul">
-                <li><a href="">
+                <li><a href="./homePage.html">
                         <i class="fas fa-home"></i>
                     <p class="hideContent">HOME</p>
                 </a></li> 
-                <li><a href="">
+                <li><a href="./AuditPage.html">
                         <i class="fas fa-expand"></i>
                         <p class="hideContent">AUDIT</p>
                     </a>
                 </li>
-                    <li><a href="">
+                    <li><a href="./rolesPage.html">
                          <i class="fas fa-users"></i>
                         <p class="hideContent">ROLES</p>
                     </a>
@@ -70,6 +70,12 @@
                 <rect class="navbar__path " y="8" width="40" height="2" fill="black"></rect>
                 <rect class="navbar__path " width="40" height="2" fill="black"></rect>
             </svg>
+
+            <div style="text-align: center;">
+                <h1>Users</h1>
+                <br>
+                <p>Admin System Status at date: 03/09/2019</p>
+            </div>
             
             
             <div class="search-users">
@@ -81,7 +87,11 @@
 
                 </form>
             </div>
-            <div class="search-users">
+            
+            <div class="search-users" id="advanced-search">
+                    <div id="advanced-search-btn" >
+                        <a id="advanced-btn" onclick="showOptions()">Advanced Search</a>
+                    </div>
                     <div id="search-users-select">
                             <div class="dropdown mr-1">
                                 <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
