@@ -160,7 +160,7 @@
     width: 300px;
 }
 #search-users-select{
-    display:flex;
+    display:none;
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -177,14 +177,22 @@
 
 #table-content{
     margin-left: 30%;
-    margin-top: 50px;
+    margin-top: 35px;
     cursor:pointer;
 }
 
 #advanced-search{
-    display: block;
+
+    display: flex;
 }
 
 #add-user-btn{
     margin-top: 20px;
+}
+
+#advanced-btn{
+    color: blue;
+    text-decoration: none;
+    border-bottom: 1px solid blue;
+    cursor: pointer;
 }
