@@ -79,21 +79,19 @@
                         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                     </div>
 
-
-
                 </form>
             </div>
             <div class="search-users">
                     <div id="search-users-select">
                             <div class="dropdown mr-1">
-                                    <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
-                                        Role
-                                    </button>
-                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
-                                      <a class="dropdown-item" href="#">Manager</a>
-                                      <a class="dropdown-item" href="#">Employee</a>
-                                      <a class="dropdown-item" href="#">Admin</a>
-                                    </div>
+                                <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                                    Role
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                                    <a class="dropdown-item" href="#">Manager</a>
+                                    <a class="dropdown-item" href="#">Employee</a>
+                                    <a class="dropdown-item" href="#">Admin</a>
+                                </div>
                             </div>
                             <div class="dropdown mr-1">
                                     <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
@@ -144,8 +142,14 @@
                     </div>  
             </div>
 
-            
-            
+            <!-- Adding new user -->
+            <div class="row">
+                <div class="col"></div><div class="col-5">
+                    <button id="add-user-btn">Add user</button>
+                </div><div class="col"></div>
+            </div>
+
+            <!-- Users' table -->
             <div class="table table-hover table-style row">
                 <table id="table-content">
                     <thead>
