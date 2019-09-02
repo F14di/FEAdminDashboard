@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="./stylesheets/User_Profile.css">
+    <link rel="stylesheet" href="./stylesheets/homePage.css">
     <link rel="stylesheet" href="./stylesheets/Dashboard_admin.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -17,97 +18,45 @@
     <div class="row">
 
         <nav class="col-2">
-            <div class="vertical-nav bg-white" id="sidebar">
-                <div class="py-4 px-3 mb-4 bg-light">
-                    <div class="media d-flex align-items-center"><img src="./assets/images/amdocs-logo.png" alt="..."
-                            class="mr-3 logo-img shadow-sm">
-                        <div class="media-body">
-                            <h4 class="m-0" id="Admin-name"></h4>
-                            <p class="font-weight-light text-muted mb-0">Admin</p>
-                        </div>
+                <div id="sideNavBar" class="sidebar">
+                        <ul class="nav__ul">
+                            <li><a href="">
+                                    <i class="fas fa-home"></i>
+                                <p class="hideContent">HOME</p>
+                            </a></li> 
+                            <li><a href="">
+                                    <i class="fas fa-expand"></i>
+                                    <p class="hideContent">AUDIT</p>
+                                </a>
+                            </li>
+                                <li><a href="">
+                                     <i class="fas fa-users"></i>
+                                    <p class="hideContent">ROLES</p>
+                                </a>
+                            </li>
+                                <li><a href="">
+                                     <i class="fas fa-chart-pie"></i>
+                                    <p class="hideContent">CHARTS</p>
+                                </a>
+                            </li>
+                            <li><a href="">
+                                    <i class="fas fa-info"></i>
+                                   <p class="hideContent">ABOUT</p>
+                               </a>
+                           </li>
+                        </ul>
+                        
                     </div>
-                </div>
-
-                <p class="text-gray font-weight-bold text-uppercase px-3 small pb-4 mb-0">Home</p>
-
-                <ul class="nav flex-column bg-white mb-0">
-                    <li class="nav-item">
-                        <a href="./Dashboard_admin.html" class="nav-link text-dark font-italic bg-light">
-                            <i class="fa fa-th-large mr-3 text-primary fa-fw"></i>
-                            Home
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="./admin_userlist.html" class="nav-link text-dark font-italic bg-light">
-                            <i class="fa fa-address-card mr-3 text-primary fa-fw"></i>
-                            Users
-                        </a>
-                    </li>
-                    
-                    <li class="nav-item">
-                        <a href="./rolesPage.html" class="nav-link text-dark font-italic bg-light">
-                            <i class="fa fa-address-card mr-3 text-primary fa-fw"></i>
-                            Roles
-                        </a>
-                    </li>
-                    
-                    <li class="nav-item">
-                        <a href="#" class="nav-link text-dark font-italic bg-light">
-                            <i class="fa fa-cubes mr-3 text-primary fa-fw"></i>
-                            Audit
-                        </a>
-                    </li>
-                    
-                    <li class="nav-item">
-                        <a href="#" class="nav-link text-dark font-italic bg-light">
-                            <i class="fa fa-picture-o mr-3 text-primary fa-fw"></i>
-                            About
-                        </a>
-                    </li>
-                </ul>
-                
-                <p class="text-gray font-weight-bold text-uppercase px-3 small py-4 mb-0">Charts</p>
-                
-                <ul class="nav flex-column bg-white mb-0">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link text-dark font-italic bg-light">
-                            <i class="fa fa-area-chart mr-3 text-primary fa-fw"></i>
-                            Activity Chart
-                        </a>
-                    </li>
-                    
-                    <li class="nav-item">
-                        <a href="#" class="nav-link text-dark font-italic bg-light">
-                            <i class="fa fa-bar-chart mr-3 text-primary fa-fw"></i>
-                            Bar charts
-                        </a>
-                    </li>
-                </ul>
-
-                <p class="text-gray font-weight-bold text-uppercase px-3 small py-4 mb-0">Charts</p>
-
-                <ul class="nav flex-column bg-white mb-0">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link text-dark font-italic bg-light">
-                            <i class="fa fa-area-chart mr-3 text-primary fa-fw"></i>
-                            Activity Chart
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="#" class="nav-link text-dark font-italic bg-light">
-                            <i class="fa fa-bar-chart mr-3 text-primary fa-fw"></i>
-                            Bar charts
-                        </a>
-                    </li>
-                </ul>
-            </div>
+            
         </nav>
-
+        <svg id="toggleNavbar" onclick="toggleNav()" width="40" height="40" viewBox="0 0 40 40" fill="none" class="">
+                <rect class="navbar__path " y="16" width="40" height="2" fill="black"></rect>
+                <rect class="navbar__path " y="8" width="40" height="2" fill="black"></rect>
+                <rect class="navbar__path " width="40" height="2" fill="black"></rect>
+            </svg>
         <main class="col-10">
             <!-- Main Window Content -->
-
+            
             <div>
                 <div class="container__frame">
                     <h2 id="Employee__Name">Name Of Employee</h2>
@@ -221,8 +170,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-
-
+        <script src="./scripts/roles.js"></script>
+   
 </body>
-
 </html>
