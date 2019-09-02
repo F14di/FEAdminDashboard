@@ -71,14 +71,61 @@
                 <rect class="navbar__path " width="40" height="2" fill="black"></rect>
             </svg>
             
+            
             <div class="search-users">
                 <form class="form-inline my-2 my-lg-0">
                     <div id="search-users-bar">
                         <input class="form-control mr-sm-2" id="search-bar" type="search" placeholder="Search a user" aria-label="Search">
                         <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
                     </div>
-                    <a id="advanced-search" href="#" onclick="advancedSearch()">Advanced Search</a>
+
+
+
+                </form>
+            </div>
+            <div class="search-users">
                     <div id="search-users-select">
+                            <div class="dropdown mr-1">
+                                    <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                                        Role
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                                      <a class="dropdown-item" href="#">Manager</a>
+                                      <a class="dropdown-item" href="#">Employee</a>
+                                      <a class="dropdown-item" href="#">Admin</a>
+                                    </div>
+                            </div>
+                            <div class="dropdown mr-1">
+                                    <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                                        Department
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                                      <a class="dropdown-item" href="#">Manager</a>
+                                      <a class="dropdown-item" href="#">Employee</a>
+                                      <a class="dropdown-item" href="#">Admin</a>
+                                    </div>
+                            </div>
+                            <div class="dropdown mr-1">
+                                    <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                                        Work Site
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                                      <a class="dropdown-item" href="#">Manager</a>
+                                      <a class="dropdown-item" href="#">Employee</a>
+                                      <a class="dropdown-item" href="#">Admin</a>
+                                    </div>
+                            </div>
+                            <div class="dropdown mr-1">
+                                    <button type="button" class="btn btn-secondary dropdown-toggle" id="dropdownMenuOffset" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="10,20">
+                                        Country
+                                    </button>
+                                    <div class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+                                      <a class="dropdown-item" href="#">Manager</a>
+                                      <a class="dropdown-item" href="#">Employee</a>
+                                      <a class="dropdown-item" href="#">Admin</a>
+                                    </div>
+                            </div>
+<!-- 
                         <select name="users-attributes" id="">
                             <option value="">Role</option>
                         </select>
@@ -93,11 +140,11 @@
 
                         <select name="" id="">
                             <option value="">Country</option>
-                        </select>
-                    </div>
-                </form>
-
+                        </select> -->
+                    </div>  
             </div>
+
+            
             
             <div class="table table-hover table-style row">
                 <table id="table-content">
