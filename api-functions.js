@@ -26,11 +26,11 @@ async function getData=(url,id)=>{
 // 	return loginResponse;
 // }
 
-// async function getUserList = ()=>{
-// 	const userList = await fetch('www.emp-amdocs.com/admin/users')
-// 							.then(res=>res.json())
-// 	return userList;
-// }
+async function getUserList = ()=>{
+	const userList = await fetch('www.emp-amdocs.com/admin/users')
+							.then(res=>res.json())
+	return userList;
+}
 
 // async function getDepartments =()=>{
 // 	const amdocsDepartments = await fetch('www.emp-amdocs.com/admin/departments')

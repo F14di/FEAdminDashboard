@@ -176,18 +176,20 @@
 }
 
 #table-content{
-    margin-left: 30%;
-    margin-top: 35px;
+    width:90vw;
+    margin-left:35px;
+    margin-top:15px;
     cursor:pointer;
 }
 
 #advanced-search{
-
     display: flex;
+    flex-direction:column;
+    align-items:center;
 }
 
 #add-user-btn{
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 #advanced-btn{
@@ -195,4 +197,5 @@
     text-decoration: none;
     border-bottom: 1px solid blue;
     cursor: pointer;
+    margin-bottom:5px;
 }

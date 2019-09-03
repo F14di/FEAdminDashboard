@@ -5,29 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>RolePage</title>
-    <link rel="stylesheet" href="./stylesheets/homePage.css">
+    <link rel="stylesheet" href="./stylesheets/home.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://d3js.org/d3.v4.min.js"></script>
-    <script src="data.js"></script>
+    
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 </head>
 <body>
+
 
     
     <div>
 
         <div id="sideNavBar" class="sidebar">
             <ul class="nav__ul">
-                <li><a href="./homePage.html">
+                <li><a href="./home.html">
                         <i class="fas fa-home"></i>
                     <p class="hideContent">HOME</p>
                 </a></li> 
-                <li><a href="./AuditPage.html">
+                <li><a href="./audit.html">
                         <i class="fas fa-expand"></i>
                         <p class="hideContent">AUDIT</p>
                     </a>
                 </li>
-                    <li><a href="./rolesPage.html">
+                    <li><a href="./roles.html">
                          <i class="fas fa-users"></i>
                         <p class="hideContent">ROLES</p>
                     </a>
@@ -73,13 +74,13 @@
             <div style="text-align: center;">
                 <h1>Roles</h1>
                 <br>
-                <h2>Admin System Status at date: 03/09/2019</h2>
+                <p>Admin System Status at date: 03/09/2019</p>
             </div>
             <br>
             <br>
             <div style="margin-left: 950px;">
                 <form action="">
-                    <button>New</button>
+                    <button class="btn btn-outline-info" onclick="openAddRole()">New</button>
                 </form>
             </div>
 
@@ -111,7 +112,7 @@
                             <a class="dropdown-item dropDown__role" style="cursor:pointer;">Role</a>
                         </div>
                     </div>
-                    
+                    0
 
                 <div class="pieChart"></div>
                     
@@ -136,7 +137,9 @@
               </li>
             </ul>
           </nav>
-    <script src="./scripts/roles.js"></script>
+
+          <script src="data.js"></script>
+        <script src="./scripts/roles.js"></script>
    
 </body>
 </html>

@@ -2,26 +2,32 @@
     
     text-align: center; 
     position: relative;
-    border-color: black;
+    border-color: black; 
     padding: 5px;
-    
+    cursor: pointer;
 }
 #table-content{
     margin-left: 30%;
     margin-top: 50px;
    cursor: inherit;
+   
 }
 .table1{ 
     table-layout: fixed; width: 1000px;
     margin: auto;
-    margin-top: 200px;
+    margin-top: 10px;
+
 }
-#page-nav{
-    margin-right:300px ;
+#pagination1{
+    text-align: center ;
 }
-<<<<<<< HEAD
-=======
-#drop-down1{
-    position: center;
+
+#flexSearch{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    
 }
->>>>>>> 947da3f918af4c5d00f1f9fdaa5b5360e9801331
+
+
