@@ -8,14 +8,14 @@ const dataURL={
 	roles:'roles'
 }
 
-async function getData=(url,id)=>{
-	if (id){
-		return await fetch(`www.emp-amdocs.com/${dataURL[url]}/${id}`)
-					.then(res=>res.json())
-	}
-	return await fetch(`www.emp-amdocs.com/${dataURL[url]}`)
-					.then(res=>res.json())
-}
+// async function getData=(url,id)=>{
+// 	if (id){
+// 		return await fetch(`www.emp-amdocs.com/${dataURL[url]}/${id}`)
+// 					.then(res=>res.json())
+// 	}
+// 	return await fetch(`www.emp-amdocs.com/${dataURL[url]}`)
+// 					.then(res=>res.json())
+// }
 
 // async function validateUserLogin(username, password){
 // 	// loginResponse stores admin details in case of success. 
@@ -26,11 +26,11 @@ async function getData=(url,id)=>{
 // 	return loginResponse;
 // }
 
-async function getUserList = ()=>{
-	const userList = await fetch('www.emp-amdocs.com/admin/users')
-							.then(res=>res.json())
-	return userList;
-}
+// async function getUserList = ()=>{
+// 	const userList = await fetch('www.emp-amdocs.com/admin/users')
+// 							.then(res=>res.json())
+// 	return userList;
+// }
 
 // async function getDepartments =()=>{
 // 	const amdocsDepartments = await fetch('www.emp-amdocs.com/admin/departments')
@@ -55,14 +55,14 @@ async function getUserList = ()=>{
 // 	return amdocsRoles;
 // }
 
-async function initAdvancedSearch=()=>{
-	return fetchAll(
-		const departments = await getDepartments();
-		const countries = await getCountries();
-		const workSites = await getWorkSites();
-		const roles = await getRoles();
-		)
-}
+// async function initAdvancedSearch=()=>{
+// 	return fetchAll(
+// 		const departments = await getDepartments();
+// 		const countries = await getCountries();
+// 		const workSites = await getWorkSites();
+// 		const roles = await getRoles();
+// 		)
+// }
 
 
 //TODO

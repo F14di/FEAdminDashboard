@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./stylesheets/navBar.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    
+    <div>
+
+        <div id="sideNavBar" class="sidebar">
+            <ul class="nav__ul">
+                <li><a href="./home.html">
+                        <i class="fas fa-home"></i>
+                    <p class="hideContent">HOME</p>
+                </a></li> 
+                <li><a href="./audit.html">
+                        <i class="fas fa-expand"></i>
+                        <p class="hideContent">AUDIT</p>
+                    </a>
+                </li>
+                    <li><a href="./roles.html">
+                         <i class="fas fa-users"></i>
+                        <p class="hideContent">ROLES</p>
+                    </a>
+                </li>
+                    <li><a href="">
+                         <i class="fas fa-chart-pie"></i>
+                        <p class="hideContent">CHARTS</p>
+                    </a>
+                </li>
+                <li><a href="">
+                        <i class="fas fa-info"></i>
+                       <p class="hideContent">ABOUT</p>
+                   </a>
+               </li>
+            </ul>
+            
+        </div>
+        <!-- MAIN CONTENT -->
+        <div id="main" class="mainContent">
+            <header>
+                <div class="jumbotron jumbotron-fluid" id="jumbotron">
+                    <div class="container">
+                        <div id="admin-logo">
+                            <img id="admin-logo-img" src="./assets/images/amdocs-logo.png">
+                        </div>
+                        <div class="admin-icon">
+                            <p class="display-5" id="admin-name">Admin Admin</p>
+                            <a title="Admin Account" role="button" tabindex="0" aria-expanded="false" href="#">
+                                <div id="admin-icon-spn" aria-hidden="true">
+                                    <img id="admin-icon-img" src="./assets/images/baseline_account_circle_white_18dp.png">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            
+            <svg id="toggleNavbar" onclick="toggleNav()" width="40" height="40" viewBox="0 0 40 40" fill="none" class="">
+                <rect class="navbar__path " y="16" width="40" height="2" fill="black"></rect>
+                <rect class="navbar__path " y="8" width="40" height="2" fill="black"></rect>
+                <rect class="navbar__path " width="40" height="2" fill="black"></rect>
+            </svg>
+            
+    
+    <script src="./scripts/navBar.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+</body>
+</html>
