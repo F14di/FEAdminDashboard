@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <style>
+        ul {
+            list-style-type: none;
+        }
+
+        li {
+            display: inline-block;
+        }
+
+        input[type="checkbox"][id^="cb"] {
+            display: none;
+        }
+
+         label.roleImg {
+            border: 1px solid #fff;
+            padding: 10px;
+            display: block;
+            position: relative;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        label::before {
+            background-color: white;
+            color: white;
+            content: " ";
+            display: block;
+            border-radius: 50%;
+            position: absolute;
+            top: -5px;
+            left: -5px;
+            width: 25px;
+            height: 25px;
+            text-align: center;
+            line-height: 28px;
+            transition-duration: 0.4s;
+            transform: scale(0);
+        }
+
+        label div img {
+            height: 100px;
+            width: 100px;
+            transition-duration: 0.2s;
+            transform-origin: 50% 50%;
+        }
+
+        :checked+label {
+            border-color: #ddd;
+        }
+
+        :checked+label::before {
+            content: "✓";
+            background-color: blue;
+            transform: scale(1);
+        }
+
+        :checked+label div.card  {
+            transform: scale(0.9);
+            box-shadow: 0 0 5px blue;
+            z-index: 1;
+        }
+        .listItemRole{
+            max-width:100px;
+            height:auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <form>
+        <div class="form-group row">
+            <label for="inputFirstName" class="col-sm-1 ">First Name</label>
+            <div class="col-sm-5">
+                <input type="text" class="form-control" id="inputFirstName" placeholder="First Name">
+            </div>
+            <label for="inputLastName" class="col-sm-1 ">Last Name</label>
+            <div class="col-sm-5">
+                <input type="text" class="form-control" id="inputLastName" placeholder="Last Name">
+            </div>
+        </div>
+
+
+
+        <div class="form-group row">
+            <label for="inputEmployeeNumber" class="col-sm-1 ">Employee Number</label>
+            <div class="col-sm-5">
+                <input type="number" class="form-control" id="inputEmployeeNumber" placeholder="Employee Number">
+            </div>
+            <label for="inputEmail" class="col-sm-1 ">Email</label>
+            <div class="col-sm-5">
+                <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+            </div>
+        </div>
+
+
+
+        <div class="form-group row">
+            <label for="inputPhone" class="col-sm-1 ">Phone</label>
+            <div class="col-sm-5">
+                <input type="text" class="form-control" id="inputPhone" placeholder="Phone">
+            </div>
+            <label for="inputManager" class="col-sm-1 ">Manager</label>
+            <div class="col-sm-5 inputManager">
+                <input type="text" list="listManagers" class="form-control" placeholder="Manager">
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="inputSite" class="col-sm-1 ">Site</label>
+            <div class="col-sm-5">
+                <input type="text" list="listSites" class="form-control" placeholder="Site">
+            </div>
+            <label for="inputDepartment" class="col-sm-1 ">Department</label>
+            <div class="col-sm-5 inputManager">
+                <input type="text" list="listDepartments" class="form-control" placeholder="Department">
+            </div>
+        </div>
+
+        <datalist id="listSites">
+            <option value="Nazareth">IL</option>
+            <option value="Ra'anana">IL</option>
+            <option value="Beer Sheva">IL</option>
+            <option value="Haifa">IL</option>
+            <option value="California">USA</option>
+        </datalist>
+
+        <datalist id="listDepartments">
+            <option value="R&D"></option>
+            <option value="QA"></option>
+        </datalist>
+
+        <datalist id="listManagers">
+            <option value="Shahar Grauman">Emp.No: 054684</option>
+            <option value="Ezer Biron">Emp.No: 48649</option>
+            <option value="Walaa">Emp.No: 31765</option>
+            <option value="Naseem">Emp.No: 13574</option>
+            <option value="Samer">Emp.No: 18357</option>
+        </datalist>
+
+
+        <div class="form-group row">
+            <label for="inputRoles" class="col-sm-1 ">Roles</label>
+        </div>
+
+        <ul>
+            <li ><input type="checkbox" id="cb1" />
+                <label class="roleImg" for="cb1">
+                    <div class="listItemRole card" style="width: 18rem;">
+                        <img src="assets/icons/employee-svgrepo-com.svg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-title">Employee</p>
+                        </div>
+                    </div>
+
+                </label>
+            </li>
+            <li><input type="checkbox" id="cb2" />
+                <label class="roleImg" for="cb2">
+                    <div class="card listItemRole" style="width: 18rem;">
+                        <img src="assets/icons/kissclipart-sales-manager-icon-clipart-sales-management-comput-ccfedb7a9a6091f7.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-title">Manager</p>
+                        </div>
+                    </div>
+
+                </label>
+            </li>
+            <li><input type="checkbox" id="cb3" />
+                <label class="roleImg" for="cb3">
+                    <div class=" listItemRole card" style="width: 18rem;">
+                        <img src="assets/icons/527px-Penguin_Admin.svg.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-title">Admin</p>
+                        </div>
+                    </div>
+
+                </label>
+            </li>
+            
+
+
+        </ul>
+
+
+    </form>
+
+
+</body>
+
+</html>

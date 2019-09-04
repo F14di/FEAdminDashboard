@@ -18,7 +18,6 @@ user_email.value=USER.email;
 user_department.value=USER.department;
 
 
-
 const all_roles=document.querySelector(".allRoles");
 const user_roles=document.querySelector(".userRoles");
 

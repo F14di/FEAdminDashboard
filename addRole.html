@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./stylesheets/addRole.css">
+    <title>Document</title>
+</head>
+<body>  
+    <div id="container">
+        <h3 id="role">Role</h3>
+
+
+        <form class="my-form">
+            <div  class="form-group">
+                <label for="">Name:</label>
+                <input type="text" id="textName">
+            </div>
+            <div class="form-group">
+                <form action="">
+                <label for="">Description:</label>
+                <textarea id="textarea"></textarea>
+                </form>
+            </div>
+        </form>
+
+        <div id="main">
+        <div id="permissions">
+            <div id="per">
+            <p>Permissions</p>
+            </div>
+            <div id="select">
+            <p>Selected Permissions</p>
+            </div>
+        </div>
+        <div id="permis">
+            
+            <div id="perLeft">
+                <form action="">
+                        <select class="custom-select" multiple>
+                                <option value="1">Permissions No.1</option>
+                                <option value="2">Permissions No.2</option>
+                                <option value="3">Permissions No.3</option>
+                                <option value="3">Permissions No.4</option>
+                                <option value="3">Permissions No.5</option>
+                        </select>
+                </form>
+            </div>
+            <div>
+                <form>
+                            <div id="add">
+                            <label for=""></label>
+                            <button type="button" class="btn btn-dark">Add</button>
+                            </div>
+                    </form>
+                
+                
+                <div>
+                    <form class="my-form">
+                        <label for=""></label>
+                        <button type="button" class="btn btn-dark">Remove</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div id="perRight">
+                <form action="">
+                        <select class="custom-select" multiple>
+                                <option value="1">Permissions No.1</option>
+                                <option value="2">Permissions No.2</option>
+                                <option value="3">Permissions No.3</option>
+                                <option value="3">Permissions No.4</option>
+                                <option value="3">Permissions No.5</option>
+                        </select>
+                </form>
+            </div>
+        </div>
+    </div>
+        
+        <form id="footer">
+            <div  class="form-group">
+                    <button type="button" class="btn btn-dark" id="save">Save</button>
+                    <button type="button" class="btn btn-dark" id="cancel">Cancel</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

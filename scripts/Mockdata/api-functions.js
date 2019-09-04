@@ -56,7 +56,11 @@ const getDepartments = async ()=>{
 // 	return amdocsRoles;
 // }
 
+<<<<<<< HEAD:api-functions.js
 // const initAdvancedSearch= async()=>{
+=======
+// async function initAdvancedSearch=()=>{
+>>>>>>> origin/master:scripts/Mockdata/api-functions.js
 // 	return fetchAll(
 // 		const departments = await getDepartments();
 // 		const countries = await getCountries();

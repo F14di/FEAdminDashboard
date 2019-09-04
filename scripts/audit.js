@@ -3,7 +3,7 @@ function init(){
     const auditData = api.getUsersAudit();
 
     //grab the table tbody using document.querySelector
-    const table = document.querySelector('#audit-table tbody');
+    const table = document.querySelector('#audit-table-data tbody');
 
     //iterate over auditData and add new <tr> with the data
     //for each audit:
